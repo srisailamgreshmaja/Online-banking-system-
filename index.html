@@ -1,0 +1,1080 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Indian Bank - Digital Banking</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Service Image Styling -->
+    <style>
+        /* ================= SERVICES IMAGES ================= */
+
+        .service-card {
+            overflow: hidden;
+        }
+
+        .service-card-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .service-card-content {
+            padding: 0 30px 30px;
+        }
+
+        .service-card .service-icon {
+            margin-top: -30px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .service-card-content h3 {
+            margin-top: 22px;
+        }
+
+        @media (max-width: 1100px) {
+            .service-card-image {
+                height: 190px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .service-card-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-building-columns"></i>
+        <span>Indian Bank</span>
+    </div>
+
+  <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#security">Security</a>
+        <a href="#about">About</a>
+    </nav>
+   
+
+    
+    <div class="nav-buttons">
+        <button class="login-btn" onclick="showLogin()">
+            Login
+        </button>
+
+        <button class="signup-btn" onclick="showSignup()">
+            Open Account
+        </button>
+
+        <button class="admin-btn" onclick="showAdminLogin()">
+            Admin
+        </button>
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="secure-label">
+            <i class="fa-solid fa-shield-halved"></i>
+            Secure Digital Banking
+        </div>
+
+        <h1>
+            Banking made
+            <span>simple.</span>
+        </h1>
+
+        <p>
+            Manage your money, transfer funds and track your
+            transactions securely from anywhere.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn" onclick="showLogin()">
+                Login to Banking
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <button class="secondary-btn" onclick="showSignup()">
+                Open an Account
+            </button>
+
+        </div>
+
+        <div class="trust-items">
+
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                Secure
+            </div>
+
+            <div>
+                <i class="fa-solid fa-bolt"></i>
+                Fast
+            </div>
+
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                Digital
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85"
+            alt="Digital Banking"
+        >
+
+        <div class="floating-card">
+
+            <div class="card-top">
+                <span>INDIAN BANK</span>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+
+            <div class="card-number">
+                •••• •••• •••• 4582
+            </div>
+
+            <div class="card-bottom">
+                <span>Digital Card</span>
+                <i class="fa-brands fa-cc-visa"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="stats-section">
+
+    <div class="stat-box">
+        <i class="fa-solid fa-users"></i>
+        <h2>10K+</h2>
+        <p>Digital Users</p>
+    </div>
+
+    <div class="stat-box">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h2>100%</h2>
+        <p>Secure Banking</p>
+    </div>
+
+    <div class="stat-box">
+        <i class="fa-solid fa-clock"></i>
+        <h2>24/7</h2>
+        <p>Online Access</p>
+    </div>
+
+    <div class="stat-box">
+        <i class="fa-solid fa-bolt"></i>
+        <h2>Fast</h2>
+        <p>Transactions</p>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES SECTION
+===================================================== -->
+
+<section id="services" class="services-section">
+
+    <div class="section-heading">
+
+        <span>OUR SERVICES</span>
+
+        <h2>
+            Banking made
+            <b>easy.</b>
+        </h2>
+
+        <div class="heading-line"></div>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+        <!-- =================================================
+             MONEY TRANSFER
+        ================================================== -->
+
+        <div class="service-card">
+
+            <img
+                class="service-card-image"
+                src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&q=85"
+                alt="Money Transfer"
+            >
+
+            <div class="service-card-content">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                </div>
+
+                <h3>
+                    Money Transfer
+                </h3>
+
+                <p>
+                    Transfer money easily between registered accounts.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             DIGITAL WALLET
+        ================================================== -->
+
+        <div class="service-card">
+
+            <img
+                class="service-card-image"
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=85"
+                alt="Digital Wallet"
+            >
+
+            <div class="service-card-content">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+
+                <h3>
+                    Digital Wallet
+                </h3>
+
+                <p>
+                    Check your available balance anytime.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             TRACK SPENDING
+        ================================================== -->
+
+        <div class="service-card">
+
+            <img
+                class="service-card-image"
+                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=85"
+                alt="Track Spending"
+            >
+
+            <div class="service-card-content">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <h3>
+                    Track Spending
+                </h3>
+
+                <p>
+                    View your deposits, withdrawals and transfers.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             DIGITAL CARD
+        ================================================== -->
+
+        <div class="service-card">
+
+            <img
+                class="service-card-image"
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=85"
+                alt="Digital Banking Card"
+            >
+
+            <div class="service-card-content">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+
+                <h3>
+                    Digital Card
+                </h3>
+
+                <p>
+                    Access your digital banking card from your dashboard.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SECURITY SECTION
+===================================================== -->
+
+<section id="security" class="security-section">
+
+    <div class="security-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1000&q=85"
+            alt="Secure Banking"
+        >
+
+    </div>
+
+
+    <div class="security-content">
+
+        <span>YOUR SECURITY</span>
+
+        <h2>
+            Your money is
+            <b>protected.</b>
+        </h2>
+
+        <p>
+            Indian Bank provides a secure digital banking experience
+            designed to keep your account and transactions protected.
+        </p>
+
+
+        <div class="security-points">
+
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <div>
+                    <h3>Secure Login</h3>
+                    <p>
+                        Your account is protected using secure login.
+                    </p>
+                </div>
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-lock"></i>
+
+                <div>
+                    <h3>Private Data</h3>
+                    <p>
+                        Your banking information stays protected.
+                    </p>
+                </div>
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-user-shield"></i>
+
+                <div>
+                    <h3>Account Protection</h3>
+                    <p>
+                        Monitor and manage your account securely.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT SECTION
+===================================================== -->
+
+<section id="about" class="about-section">
+
+    <div class="about-content">
+
+        <span>ABOUT INDIAN BANK</span>
+
+        <h2>
+            Banking for your
+            <b>digital life.</b>
+        </h2>
+
+        <p>
+            Our academic digital banking project demonstrates
+            how modern banking services can be managed through
+            a simple and user-friendly web application.
+        </p>
+
+        <p>
+            Users can create accounts, login securely, check
+            balances, transfer money and view their transactions.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-logo">
+        <i class="fa-solid fa-building-columns"></i>
+        Indian Bank
+    </div>
+
+    <p>
+        Digital Banking — Academic Project
+    </p>
+
+    <p>
+        © 2026 Indian Bank Demo. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     USER LOGIN MODAL
+===================================================== -->
+
+<div id="loginModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal('loginModal')">
+            &times;
+        </span>
+
+        <div class="modal-icon">
+            <i class="fa-solid fa-right-to-bracket"></i>
+        </div>
+
+        <h2>User Login</h2>
+
+        <p class="modal-subtitle">
+            Login to your Indian Bank account
+        </p>
+
+
+        <form onsubmit="loginUser(event)">
+
+            <label>
+                Email ID
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+            <label>
+                Username
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    type="text"
+                    id="loginUsername"
+                    placeholder="Enter your username"
+                    required
+                >
+
+            </div>
+
+
+            <label>
+                Password
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+            </div>
+
+
+            <button type="submit" class="modal-btn">
+                Login
+            </button>
+
+        </form>
+
+
+        <p class="switch-text">
+            Don't have an account?
+            <button onclick="switchToSignup()">
+                Create Account
+            </button>
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     SIGNUP MODAL
+===================================================== -->
+
+<div id="signupModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal('signupModal')">
+            &times;
+        </span>
+
+        <div class="modal-icon">
+            <i class="fa-solid fa-user-plus"></i>
+        </div>
+
+        <h2>Create Account</h2>
+
+        <p class="modal-subtitle">
+            Open your Indian Bank digital account
+        </p>
+
+
+        <form onsubmit="createAccount(event)">
+
+            <label>
+                Full Name
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter full name"
+                    required
+                >
+
+            </div>
+
+
+            <label>
+                Email ID
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter email"
+                    required
+                >
+
+            </div>
+
+
+            <label>
+                Username
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user-tag"></i>
+
+                <input
+                    type="text"
+                    id="signupUsername"
+                    placeholder="Create username"
+                    required
+                >
+
+            </div>
+
+
+            <label>
+                Phone Number
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <input
+                    type="tel"
+                    id="signupPhone"
+                    placeholder="10-digit phone number"
+                    required
+                >
+
+            </div>
+
+
+            <label>
+                Password
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Create password"
+                    required
+                >
+
+            </div>
+
+
+            <label>
+                Initial Deposit
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                <input
+                    type="number"
+                    id="signupDeposit"
+                    placeholder="Optional"
+                    min="0"
+                >
+
+            </div>
+
+
+            <button type="submit" class="modal-btn">
+                Create Account
+            </button>
+
+        </form>
+
+
+        <p class="switch-text">
+            Already have an account?
+            <button onclick="switchToLogin()">
+                Login
+            </button>
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     ADMIN LOGIN MODAL
+===================================================== -->
+
+<div id="adminModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal('adminModal')">
+            &times;
+        </span>
+
+        <div class="modal-icon admin-icon">
+            <i class="fa-solid fa-user-shield"></i>
+        </div>
+
+        <h2>Admin Login</h2>
+
+        <p class="modal-subtitle">
+            Indian Bank Administration
+        </p>
+
+
+        <form onsubmit="adminLogin(event)">
+
+            <label>
+                Admin Email
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                    type="email"
+                    id="adminEmail"
+                    placeholder="Admin email"
+                    required
+                >
+
+            </div>
+
+
+            <label>
+                Admin Username
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user-shield"></i>
+
+                <input
+                    type="text"
+                    id="adminUsername"
+                    placeholder="Admin username"
+                    required
+                >
+
+            </div>
+
+
+            <label>
+                Admin Password
+            </label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Admin password"
+                    required
+                >
+
+            </div>
+
+
+            <button type="submit" class="modal-btn">
+                Admin Login
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     USER DASHBOARD
+===================================================== -->
+
+<section id="userDashboard" class="dashboard">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h1>
+                Welcome,
+                <span id="dashboardUserName">
+                    User
+                </span>
+            </h1>
+
+            <p id="dashboardUserEmail">
+                user@email.com
+            </p>
+
+        </div>
+
+        <button onclick="logout()" class="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </div>
+
+
+    <div class="dashboard-grid">
+
+        <!-- Balance -->
+        <div class="dashboard-card balance-card">
+
+            <div class="card-heading">
+
+                <span>
+                    Available Balance
+                </span>
+
+                <i class="fa-solid fa-wallet"></i>
+
+            </div>
+
+            <h2 id="dashboardBalance">
+                ₹0.00
+            </h2>
+
+            <p>
+                Your current account balance
+            </p>
+
+        </div>
+
+
+        <!-- Digital Card -->
+        <div class="dashboard-card bank-card">
+
+            <div class="bank-card-top">
+                <span>INDIAN BANK</span>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+
+            <div class="bank-card-number">
+                •••• •••• •••• 4582
+            </div>
+
+            <div class="bank-card-bottom">
+
+                <div>
+                    <small>Card Holder</small>
+                    <span id="cardHolderName">
+                        USER
+                    </span>
+                </div>
+
+                <i class="fa-brands fa-cc-visa"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Quick Actions -->
+
+    <div class="quick-actions">
+
+        <h2>Quick Actions</h2>
+
+        <div class="action-grid">
+
+            <button onclick="depositMoney()">
+                <i class="fa-solid fa-plus"></i>
+                Deposit
+            </button>
+
+            <button onclick="withdrawMoney()">
+                <i class="fa-solid fa-minus"></i>
+                Withdraw
+            </button>
+
+            <button onclick="transferMoney()">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                Transfer
+            </button>
+
+            <button onclick="clearTransactions()">
+                <i class="fa-solid fa-trash"></i>
+                Clear History
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Transactions -->
+
+    <div class="transactions-card">
+
+        <div class="transaction-header">
+
+            <h2>
+                Recent Transactions
+            </h2>
+
+            <i class="fa-solid fa-clock-rotate-left"></i>
+
+        </div>
+
+        <div id="transactionsList">
+
+            <p class="no-transactions">
+                No transactions yet.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ADMIN DASHBOARD
+===================================================== -->
+
+<section id="adminDashboard" class="dashboard admin-dashboard">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h1>
+                Admin Dashboard
+            </h1>
+
+            <p>
+                Indian Bank Administration
+            </p>
+
+        </div>
+
+        <button onclick="adminLogout()" class="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </div>
+
+
+    <div class="admin-stats">
+
+        <div class="admin-stat">
+
+            <i class="fa-solid fa-users"></i>
+
+            <div>
+                <span>Total Users</span>
+                <strong id="totalUsers">
+                    0
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="admin-stat">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+            <div>
+                <span>Administrators</span>
+                <strong>
+                    1
+                </strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="admin-users-card">
+
+        <div class="transaction-header">
+
+            <h2>
+                Registered Users
+            </h2>
+
+            <i class="fa-solid fa-users"></i>
+
+        </div>
+
+        <div id="adminUsersList">
+
+            <p class="no-transactions">
+                No users registered yet.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
